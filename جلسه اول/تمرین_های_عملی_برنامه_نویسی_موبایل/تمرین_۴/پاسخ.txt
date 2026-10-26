@@ -1,0 +1,18 @@
+تمرین ۴: اجرای عملیات پس از لمس دکمه
+
+برای اجرای عملیات پس از لمس دکمه، ابتدا دکمه را در فایل XML با یک شناسه مشخص تعریف می‌کنیم. سپس در Activity با دستور findViewById به آن دسترسی می‌گیریم و یک شنونده رویداد کلیک (OnClickListener) به آن متصل می‌کنیم. کد داخل متد onClick زمانی اجرا می‌شود که کاربر دکمه را لمس کند.
+
+نمونه کد Java:
+
+Button button = findViewById(R.id.submitButton);
+
+button.setOnClickListener(new View.OnClickListener() {
+    @Override
+    public void onClick(View view) {
+        // عملیات موردنظر پس از لمس دکمه
+        Toast.makeText(MainActivity.this,
+                "دکمه لمس شد", Toast.LENGTH_SHORT).show();
+    }
+});
+
+در این مثال، با لمس دکمه یک پیام کوتاه روی صفحه نمایش داده می‌شود.

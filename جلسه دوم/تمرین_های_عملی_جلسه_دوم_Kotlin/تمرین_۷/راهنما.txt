@@ -1,0 +1,9 @@
+تمرین ۷: برنامه اندرویدی دارای عنوان و دکمه با Kotlin
+
+۱) در Android Studio یک پروژه مبتنی بر Views با زبان Kotlin بسازید.
+۲) فایل XML را در app/src/main/res/layout/activity_main.xml قرار دهید.
+۳) کد MainActivity.kt را در Activity اصلی قرار دهید.
+۴) package ابتدای فایل Kotlin را با package پروژه خود هماهنگ کنید.
+۵) برنامه را اجرا کنید و روی «نمایش پیام» بزنید.
+
+این پوشه فایل‌های اصلی تمرین را دارد، نه یک پروژه کامل Gradle؛ تنظیمات ساخت و نسخه SDK به محیط Android Studio بستگی دارد.
