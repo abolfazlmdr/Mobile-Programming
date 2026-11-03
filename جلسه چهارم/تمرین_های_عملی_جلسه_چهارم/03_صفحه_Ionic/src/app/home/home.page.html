@@ -1,0 +1,14 @@
+<ion-header>
+  <ion-toolbar color="primary"><ion-title>مدیریت دانشجویان</ion-title></ion-toolbar>
+</ion-header>
+<ion-content class="ion-padding">
+  <ion-item>
+    <ion-input label="نام دانشجو" label-placement="stacked" placeholder="نام را وارد کنید" [(ngModel)]="studentName"></ion-input>
+  </ion-item>
+  <ion-button expand="block" class="ion-margin-top" (click)="addStudent()">ثبت دانشجو</ion-button>
+  <ion-list>
+    <ion-list-header><ion-label>فهرست دانشجویان</ion-label></ion-list-header>
+    <ion-item *ngFor="let student of students"><ion-label>{{ student }}</ion-label></ion-item>
+  </ion-list>
+  <ion-text color="medium" *ngIf="students.length === 0">هنوز دانشجویی ثبت نشده است.</ion-text>
+</ion-content>
